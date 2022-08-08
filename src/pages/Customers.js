@@ -18,8 +18,6 @@ const Customers = () => {
     const classes = useStyles()
     const [customers, setCustomers] = useState([])
 
-    console.log(customers)
-
     useEffect(() => {
         axios('https://reqres.in/api/users')
             .then(response => {
